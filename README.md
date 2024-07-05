@@ -96,8 +96,8 @@ To use these configurations, ensure that you have the respective tools installed
 
 ### LazyVim Screenshot
 
-![LazyVim Screenshot](assets\lazyvim_screenshot.png)
+![LazyVim Screenshot](/assets/lazyvim_screenshot.png)
 
 ### Starship Screenshot
 
-![Starship Screenshot](assets\starship_screenshot.png)
+![Starship Screenshot](/assets/starship_screenshot.png)
