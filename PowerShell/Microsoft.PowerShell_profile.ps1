@@ -4,15 +4,38 @@ function Invoke-Tere() {
         Set-Location $result
     }
 }
-Set-Alias tere Invoke-Tere
+Set-Alias te Invoke-Tere
+
+# init starship prompt
 Invoke-Expression (&starship init powershell)
-
-# enable completion in current shell, use absolute path because PowerShell Core not respect $env:PSModulePath
-# Import-Module "$($(Get-Item $(Get-Command scoop.ps1).Path).Directory.Parent.FullName)\modules\scoop-completion"
-
-# Shows navigable menu of all options when hitting Tab
-# Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 # Autocompletion for arrow keys
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+
+Set-Alias ls lsd
+
+function lsl {
+    lsd -l @Args
+}
+
+# open yazi
+Set-Alias ya yazi
+
+# open nvim 
+Set-Alias nm nvim
+
+# open scoop
+Set-Alias sc scoop
+
+function sci {
+    scoop install @Args
+}
+
+function scui {
+    scoop uninstall @Args
+}
+
+function sfst {
+    sfsu status @Args
+}
