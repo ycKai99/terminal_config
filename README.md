@@ -78,7 +78,7 @@ Your LazyVim configuration file should be located at `~/.config/lazyvim/lazyvim_
 
 ### PowerShell
 
-Your PowerShell profile should be located at `$HOME/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`. This file includes custom aliases, functions, and other settings to enhance your PowerShell experience.
+Your PowerShell profile should be located at `$HOME/Documents/PowerShell_or_Microsoft_PowerShell/Microsoft.PowerShell_profile.ps1`. This file includes custom aliases, functions, and other settings to enhance your PowerShell experience.
 
 ### Starship
 
